@@ -101,3 +101,17 @@ function colorYellow() {
 
 document.queryselector(".colorYellow").addeventlistener("click", colorYellow);
 
+const coment = document.querySelector('#coment');
+const btnsend = document.querySelector('#send');
+btnsend.addEventListener('click', formSend)
+
+function formSend() {
+ 
+if (coment.value === ''){
+  alert("Por favor ingrese su comentario");
+}
+else {
+  alert("Gracias por su comentario");
+}
+}
+
